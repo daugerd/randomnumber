@@ -2,9 +2,14 @@
 <html lang="en">
   <head>
     <title>Random Number</title>
-    <script></script>
+    <script>
+      function getRandomNumber() {
+        document.getElementById("number").innerHTML = Math.floor(Math.random() * 20);
+      }
+    </script>
   </head>
-  <body>
+  <body onload="getRandomNumber()">
     <h1>Random Number</h1>
+    <p><span id="number"></span></span></p>
   </body>
 </html>
